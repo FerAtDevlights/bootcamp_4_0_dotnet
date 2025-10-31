@@ -1,0 +1,6 @@
+@Clase3_EjemploController_WebAPI_HostAddress = http://localhost:5245
+
+GET {{Clase3_EjemploController_WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

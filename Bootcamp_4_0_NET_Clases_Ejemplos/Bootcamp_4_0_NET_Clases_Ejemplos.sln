@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 1 y 2 - Tipos de Datos - Estructuras de Control", "Clase 1 y 2 - Tipos de Datos - Estructuras de Control", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 3 - Funciones", "Clase 3 - Funciones", "{542E1675-B2F1-4F39-9BB6-CCA60F6D5BCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 4 - Colecciones", "Clase 4 - Colecciones", "{FB20A581-21B3-4794-8F7A-55F8CEE1D277}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 5 y 6 - POO", "Clase 5 y 6 - POO", "{F9D452B1-62CD-42B8-9AA6-FA15DF212027}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase2_Ejemplos_ConsoleApp", "Clase2_Ejemplos_ConsoleApp\Clase2_Ejemplos_ConsoleApp.csproj", "{8D808DA0-25C8-4651-A6E8-9028959EBAA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase3_EjemploFunciones_ConsoleApp", "Clase3_EjemplosDeFunciones_ConsoleApp\Clase3_EjemploFunciones_ConsoleApp.csproj", "{10AEACA3-9CB7-4F41-9B02-590627D67686}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase3_EjemploController_WebAPI", "Clase3_EjemploController_WebAPI\Clase3_EjemploController_WebAPI.csproj", "{EE0D551B-BC27-4DF1-BAF3-C556E8223BC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase4_EjemploColecciones_ConsoleApp", "Clase4_EjemploColecciones_ConsoleApp\Clase4_EjemploColecciones_ConsoleApp.csproj", "{D0D65560-FE85-44E5-AE60-221EAA4C9B79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase5_EjemploPOO_WebAPI", "Clase5_EjemploPOO_WebAPI\Clase5_EjemploPOO_WebAPI.csproj", "{E0C5505F-D89E-4862-9928-76656D678ADD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D808DA0-25C8-4651-A6E8-9028959EBAA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D808DA0-25C8-4651-A6E8-9028959EBAA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D808DA0-25C8-4651-A6E8-9028959EBAA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D808DA0-25C8-4651-A6E8-9028959EBAA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10AEACA3-9CB7-4F41-9B02-590627D67686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10AEACA3-9CB7-4F41-9B02-590627D67686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10AEACA3-9CB7-4F41-9B02-590627D67686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10AEACA3-9CB7-4F41-9B02-590627D67686}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE0D551B-BC27-4DF1-BAF3-C556E8223BC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0D551B-BC27-4DF1-BAF3-C556E8223BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0D551B-BC27-4DF1-BAF3-C556E8223BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0D551B-BC27-4DF1-BAF3-C556E8223BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D65560-FE85-44E5-AE60-221EAA4C9B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D65560-FE85-44E5-AE60-221EAA4C9B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D65560-FE85-44E5-AE60-221EAA4C9B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D65560-FE85-44E5-AE60-221EAA4C9B79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0C5505F-D89E-4862-9928-76656D678ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0C5505F-D89E-4862-9928-76656D678ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0C5505F-D89E-4862-9928-76656D678ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0C5505F-D89E-4862-9928-76656D678ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D808DA0-25C8-4651-A6E8-9028959EBAA8} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{10AEACA3-9CB7-4F41-9B02-590627D67686} = {542E1675-B2F1-4F39-9BB6-CCA60F6D5BCF}
+		{EE0D551B-BC27-4DF1-BAF3-C556E8223BC4} = {542E1675-B2F1-4F39-9BB6-CCA60F6D5BCF}
+		{D0D65560-FE85-44E5-AE60-221EAA4C9B79} = {FB20A581-21B3-4794-8F7A-55F8CEE1D277}
+		{E0C5505F-D89E-4862-9928-76656D678ADD} = {F9D452B1-62CD-42B8-9AA6-FA15DF212027}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F13CC36-FC16-4632-857D-530FB0805CD0}
+	EndGlobalSection
+EndGlobal
