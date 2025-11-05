@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36623.8 d17.14
+VisualStudioVersion = 17.14.36623.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 1 y 2 - Tipos de Datos - Estructuras de Control", "Clase 1 y 2 - Tipos de Datos - Estructuras de Control", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -20,6 +20,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase4_EjemploColecciones_ConsoleApp", "Clase4_EjemploColecciones_ConsoleApp\Clase4_EjemploColecciones_ConsoleApp.csproj", "{D0D65560-FE85-44E5-AE60-221EAA4C9B79}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase5_EjemploPOO_WebAPI", "Clase5_EjemploPOO_WebAPI\Clase5_EjemploPOO_WebAPI.csproj", "{E0C5505F-D89E-4862-9928-76656D678ADD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 7 - Entity Framework", "Clase 7 - Entity Framework", "{FC372DA9-0CAE-4A98-ADD0-62C58122FFDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.BusinessLayer", "Bootcamp.BusinessLayer\Bootcamp.BusinessLayer.csproj", "{8BC0572D-B60B-472A-BB40-B583A2BB0AAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.DataAccessLayer", "Bootcamp.DataAccessLayer\Bootcamp.DataAccessLayer.csproj", "{4E4FC1B4-E9F6-4988-BBA0-51EE29D88F97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.API", "Bootcamp.API\Bootcamp.API.csproj", "{E90CBD04-DAB3-4816-B7B3-862E80681A0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +55,18 @@ Global
 		{E0C5505F-D89E-4862-9928-76656D678ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0C5505F-D89E-4862-9928-76656D678ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0C5505F-D89E-4862-9928-76656D678ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC0572D-B60B-472A-BB40-B583A2BB0AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC0572D-B60B-472A-BB40-B583A2BB0AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC0572D-B60B-472A-BB40-B583A2BB0AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC0572D-B60B-472A-BB40-B583A2BB0AAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4FC1B4-E9F6-4988-BBA0-51EE29D88F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4FC1B4-E9F6-4988-BBA0-51EE29D88F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4FC1B4-E9F6-4988-BBA0-51EE29D88F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4FC1B4-E9F6-4988-BBA0-51EE29D88F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E90CBD04-DAB3-4816-B7B3-862E80681A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E90CBD04-DAB3-4816-B7B3-862E80681A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E90CBD04-DAB3-4816-B7B3-862E80681A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E90CBD04-DAB3-4816-B7B3-862E80681A0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +77,9 @@ Global
 		{EE0D551B-BC27-4DF1-BAF3-C556E8223BC4} = {542E1675-B2F1-4F39-9BB6-CCA60F6D5BCF}
 		{D0D65560-FE85-44E5-AE60-221EAA4C9B79} = {FB20A581-21B3-4794-8F7A-55F8CEE1D277}
 		{E0C5505F-D89E-4862-9928-76656D678ADD} = {F9D452B1-62CD-42B8-9AA6-FA15DF212027}
+		{8BC0572D-B60B-472A-BB40-B583A2BB0AAB} = {FC372DA9-0CAE-4A98-ADD0-62C58122FFDF}
+		{4E4FC1B4-E9F6-4988-BBA0-51EE29D88F97} = {FC372DA9-0CAE-4A98-ADD0-62C58122FFDF}
+		{E90CBD04-DAB3-4816-B7B3-862E80681A0E} = {FC372DA9-0CAE-4A98-ADD0-62C58122FFDF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F13CC36-FC16-4632-857D-530FB0805CD0}

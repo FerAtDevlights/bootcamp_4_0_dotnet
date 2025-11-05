@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Bootcamp.DataAccessLayer.DTOs
+{
+    public class PersonaWithCarsDTO
+    {
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string Direccion { get; set; }
+        public List<AutoDTO> PersonaAutos { get; set; }
+    }
+}
