@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Bootcamp.BusinessLayer\Bootcamp.BusinessLayer.csproj" />
     <ProjectReference Include="..\Bootcamp.DataAccessLayer\Bootcamp.DataAccessLayer.csproj" />
   </ItemGroup>
 

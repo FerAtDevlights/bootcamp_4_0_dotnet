@@ -3,6 +3,7 @@ using Bootcamp.DataAccessLayer.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bootcamp.DataAccessLayer.Migrations
 {
     [DbContext(typeof(BootcampDbContext))]
-    partial class BootcampDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251106223200_AlterTables_AutoAndPersona_AddedDataAnnotationLimits")]
+    partial class AlterTables_AutoAndPersona_AddedDataAnnotationLimits
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

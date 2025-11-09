@@ -1,6 +1,8 @@
-﻿using Bootcamp.DataAccessLayer.Data;
+﻿using Bootcamp.BusinessLayer.Interfaces;
+using Bootcamp.DataAccessLayer.Data;
 using Bootcamp.DataAccessLayer.DTOs;
 using Bootcamp.DataAccessLayer.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,62 +14,61 @@ namespace Bootcamp.API.Controllers
     [ApiController]
     public class PersonasController : ControllerBase
     {
-        private readonly BootcampDbContext _db;
-        public PersonasController(BootcampDbContext db)
+        private readonly IPersonaService _personaService;
+        public PersonasController(IPersonaService personaService)
         {
-            _db = db;
+            _personaService = personaService;
         }
 
         [HttpPost("SavePersona")]
-        public async void SavePersona(PersonaDTO value)
+        public async Task<ActionResult<string>> SavePersona(PersonaDTO value)
         {
-            var newPersona = new Persona
-            {
-                Nombre = value.Nombre,
-                Apellido = value.Apellido,
-                Direccion = value.Direccion,
-                Edad = value.Edad
-            };
-
-            _db.Personas.Add(newPersona);
-
-            _db.SaveChanges();
+            var personaCreated = await _personaService.CreatePersona(value);
+            return Ok($"Persona {personaCreated.Nombre} was successfully created");
         }
 
-        [HttpPost("SaveAuto")]
-        public async void SaveAuto(AutoDTO value)
-        {
-            var newAuto = new Auto
-            {
-                Anio = value.Anio,
-                Marca = value.Marca,
-                Modelo = value.Modelo,
-                PersonaId = value.OwnerId
-            };
-
-            _db.Autos.Add(newAuto);
-
-            _db.SaveChanges();
-        }
+        //[HttpPost("AssignCar")]
+        //public async Task<ActionResult<string>> AssignCar(AssignCarToPersonDTO value)
+        //{
+        //    var personaCreated = await _personaService.CreatePersona(value);
+        //    return Ok($"Persona {personaCreated.Nombre} was successfully created");
+        //}
 
 
-        [HttpGet("GetPersonaAuto/{id}")]
-        public async Task<ActionResult<PersonaWithCarsDTO>> GetPersonaAuto(int id)
-        {
-            var persona = await _db.Personas.Include(x => x.Autos).FirstOrDefaultAsync(x => x.Id == id);
-            
-            return Ok(new PersonaWithCarsDTO
-            {
-                Nombre = persona.Nombre,
-                Apellido = persona.Apellido,
-                Direccion = persona.Direccion,
-                PersonaAutos = persona.Autos.Select(x => new AutoDTO
-                {
-                    Anio = x.Anio,
-                    Marca = x.Marca,
-                    Modelo = x.Modelo
-                }).ToList()
-            });
-        }
+        //[HttpPost("SaveAuto")]
+        //public async void SaveAuto(AutoDTO value)
+        //{
+        //    var newAuto = new Auto
+        //    {
+        //        Anio = value.Anio,
+        //        Marca = value.Marca,
+        //        Modelo = value.Modelo,
+        //        PersonaId = value.OwnerId
+        //    };
+
+        //    _db.Autos.Add(newAuto);
+
+        //    _db.SaveChanges();
+        //}
+
+
+        //[HttpGet("GetPersonaAuto/{id}")]
+        //public async Task<ActionResult<PersonaWithCarsDTO>> GetPersonaAuto(int id)
+        //{
+        //    var persona = await _db.Personas.Include(x => x.Autos).FirstOrDefaultAsync(x => x.Id == id);
+
+        //    return Ok(new PersonaWithCarsDTO
+        //    {
+        //        Nombre = persona.Nombre,
+        //        Apellido = persona.Apellido,
+        //        Direccion = persona.Direccion,
+        //        PersonaAutos = persona.Autos.Select(x => new AutoDTO
+        //        {
+        //            Anio = x.Anio,
+        //            Marca = x.Marca,
+        //            Modelo = x.Modelo
+        //        }).ToList()
+        //    });
+        //}
     }
 }

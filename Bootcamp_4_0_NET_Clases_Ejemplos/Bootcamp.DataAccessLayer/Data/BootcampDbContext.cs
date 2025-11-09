@@ -20,5 +20,6 @@ namespace Bootcamp.DataAccessLayer.Data
         }
         public DbSet<Persona> Personas { get; set; }
         public DbSet<Auto> Autos { get; set; }
+
     }
 }

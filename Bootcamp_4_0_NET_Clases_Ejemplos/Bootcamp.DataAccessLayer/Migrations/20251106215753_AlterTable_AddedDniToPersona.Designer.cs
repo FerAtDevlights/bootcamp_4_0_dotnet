@@ -3,6 +3,7 @@ using Bootcamp.DataAccessLayer.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bootcamp.DataAccessLayer.Migrations
 {
     [DbContext(typeof(BootcampDbContext))]
-    partial class BootcampDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251106215753_AlterTable_AddedDniToPersona")]
+    partial class AlterTable_AddedDniToPersona
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -20,21 +23,6 @@ namespace Bootcamp.DataAccessLayer.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("AutoPersona", b =>
-                {
-                    b.Property<int>("AutosId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PersonasId")
-                        .HasColumnType("int");
-
-                    b.HasKey("AutosId", "PersonasId");
-
-                    b.HasIndex("PersonasId");
-
-                    b.ToTable("AutoPersona");
-                });
 
             modelBuilder.Entity("Bootcamp.DataAccessLayer.Models.Auto", b =>
                 {
@@ -55,12 +43,12 @@ namespace Bootcamp.DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Patente")
-                        .IsRequired()
-                        .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)");
+                    b.Property<int>("PersonaId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("PersonaId");
 
                     b.ToTable("Autos");
                 });
@@ -82,7 +70,6 @@ namespace Bootcamp.DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Dni")
-                        .HasMaxLength(6)
                         .HasColumnType("int");
 
                     b.Property<int>("Edad")
@@ -97,19 +84,20 @@ namespace Bootcamp.DataAccessLayer.Migrations
                     b.ToTable("Personas");
                 });
 
-            modelBuilder.Entity("AutoPersona", b =>
+            modelBuilder.Entity("Bootcamp.DataAccessLayer.Models.Auto", b =>
                 {
-                    b.HasOne("Bootcamp.DataAccessLayer.Models.Auto", null)
-                        .WithMany()
-                        .HasForeignKey("AutosId")
+                    b.HasOne("Bootcamp.DataAccessLayer.Models.Persona", "Persona")
+                        .WithMany("Autos")
+                        .HasForeignKey("PersonaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Bootcamp.DataAccessLayer.Models.Persona", null)
-                        .WithMany()
-                        .HasForeignKey("PersonasId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Persona");
+                });
+
+            modelBuilder.Entity("Bootcamp.DataAccessLayer.Models.Persona", b =>
+                {
+                    b.Navigation("Autos");
                 });
 #pragma warning restore 612, 618
         }

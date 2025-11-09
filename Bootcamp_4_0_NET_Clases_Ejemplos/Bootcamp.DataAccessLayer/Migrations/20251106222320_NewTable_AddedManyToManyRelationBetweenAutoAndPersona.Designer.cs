@@ -3,6 +3,7 @@ using Bootcamp.DataAccessLayer.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bootcamp.DataAccessLayer.Migrations
 {
     [DbContext(typeof(BootcampDbContext))]
-    partial class BootcampDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251106222320_NewTable_AddedManyToManyRelationBetweenAutoAndPersona")]
+    partial class NewTable_AddedManyToManyRelationBetweenAutoAndPersona
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -55,11 +58,6 @@ namespace Bootcamp.DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Patente")
-                        .IsRequired()
-                        .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)");
-
                     b.HasKey("Id");
 
                     b.ToTable("Autos");
@@ -82,7 +80,6 @@ namespace Bootcamp.DataAccessLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Dni")
-                        .HasMaxLength(6)
                         .HasColumnType("int");
 
                     b.Property<int>("Edad")
