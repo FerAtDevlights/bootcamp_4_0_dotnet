@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36623.8
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11205.157 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 1 y 2 - Tipos de Datos - Estructuras de Control", "Clase 1 y 2 - Tipos de Datos - Estructuras de Control", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -21,13 +21,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase4_EjemploColecciones_C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase5_EjemploPOO_WebAPI", "Clase5_EjemploPOO_WebAPI\Clase5_EjemploPOO_WebAPI.csproj", "{E0C5505F-D89E-4862-9928-76656D678ADD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 7 - Entity Framework", "Clase 7 - Entity Framework", "{FC372DA9-0CAE-4A98-ADD0-62C58122FFDF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 7 y 8 - Entity Framework", "Clase 7 y 8 - Entity Framework", "{FC372DA9-0CAE-4A98-ADD0-62C58122FFDF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.BusinessLayer", "Bootcamp.BusinessLayer\Bootcamp.BusinessLayer.csproj", "{8BC0572D-B60B-472A-BB40-B583A2BB0AAB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.DataAccessLayer", "Bootcamp.DataAccessLayer\Bootcamp.DataAccessLayer.csproj", "{4E4FC1B4-E9F6-4988-BBA0-51EE29D88F97}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.API", "Bootcamp.API\Bootcamp.API.csproj", "{E90CBD04-DAB3-4816-B7B3-862E80681A0E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 9 y 10", "Clase 9 y 10", "{C4BE5EDD-6032-4DEE-9311-02B3232FBF7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase9.DAL", "Clase9.DAL\Clase9.DAL.csproj", "{BF748ECA-E8C9-4E7A-A4FE-1DF41F31F00F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase9.BL", "Clase9.BL\Clase9.BL.csproj", "{A2892795-E4BE-4493-B963-B784C40ECCDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase9.WebAPI", "Clase9.WebAPI\Clase9.WebAPI.csproj", "{48A83D8B-E305-40FB-A105-D6FCEE0787A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +75,18 @@ Global
 		{E90CBD04-DAB3-4816-B7B3-862E80681A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E90CBD04-DAB3-4816-B7B3-862E80681A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E90CBD04-DAB3-4816-B7B3-862E80681A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF748ECA-E8C9-4E7A-A4FE-1DF41F31F00F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF748ECA-E8C9-4E7A-A4FE-1DF41F31F00F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF748ECA-E8C9-4E7A-A4FE-1DF41F31F00F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF748ECA-E8C9-4E7A-A4FE-1DF41F31F00F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2892795-E4BE-4493-B963-B784C40ECCDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2892795-E4BE-4493-B963-B784C40ECCDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2892795-E4BE-4493-B963-B784C40ECCDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2892795-E4BE-4493-B963-B784C40ECCDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A83D8B-E305-40FB-A105-D6FCEE0787A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A83D8B-E305-40FB-A105-D6FCEE0787A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A83D8B-E305-40FB-A105-D6FCEE0787A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A83D8B-E305-40FB-A105-D6FCEE0787A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +100,9 @@ Global
 		{8BC0572D-B60B-472A-BB40-B583A2BB0AAB} = {FC372DA9-0CAE-4A98-ADD0-62C58122FFDF}
 		{4E4FC1B4-E9F6-4988-BBA0-51EE29D88F97} = {FC372DA9-0CAE-4A98-ADD0-62C58122FFDF}
 		{E90CBD04-DAB3-4816-B7B3-862E80681A0E} = {FC372DA9-0CAE-4A98-ADD0-62C58122FFDF}
+		{BF748ECA-E8C9-4E7A-A4FE-1DF41F31F00F} = {C4BE5EDD-6032-4DEE-9311-02B3232FBF7B}
+		{A2892795-E4BE-4493-B963-B784C40ECCDB} = {C4BE5EDD-6032-4DEE-9311-02B3232FBF7B}
+		{48A83D8B-E305-40FB-A105-D6FCEE0787A7} = {C4BE5EDD-6032-4DEE-9311-02B3232FBF7B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F13CC36-FC16-4632-857D-530FB0805CD0}
