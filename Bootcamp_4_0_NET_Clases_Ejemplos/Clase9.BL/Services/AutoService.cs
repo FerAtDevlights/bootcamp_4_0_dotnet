@@ -105,24 +105,24 @@ namespace Bootcamp.BusinessLayer.Services
         //    }
         //}
 
-        public async Task<string> DeleteCarsByUser(int userId)
-        {
-            try
-            {
-                var persona = await _db.Personas.Include(x => x.Autos).FirstOrDefaultAsync(x => x.Id == userId);
-                if(persona.Autos.Count > 0)
-                {
-                    _db.Autos.RemoveRange(persona.Autos);
-                }
+        //public async Task<string> DeleteCarsByUser(int userId)
+        //{
+        //    try
+        //    {
+        //        var persona = await _db.Personas.Include(x => x.Autos).FirstOrDefaultAsync(x => x.Id == userId);
+        //        if(persona.Autos.Count > 0)
+        //        {
+        //            _db.Autos.RemoveRange(persona.Autos);
+        //        }
 
-                _db.SaveChanges();
+        //        _db.SaveChanges();
 
-                return $"Cars from {persona.Nombre} were successfully removed";
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
+        //        return $"Cars from {persona.Nombre} were successfully removed";
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception(ex.Message);
+        //    }
+        //}
     }
 }

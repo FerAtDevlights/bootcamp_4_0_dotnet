@@ -5,6 +5,7 @@ using Bootcamp.DataAccessLayer.DTOs;
 
 using Clase9.DAL.Data;
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -50,20 +51,16 @@ namespace Bootcamp.API.Controllers
         [HttpDelete("DeleteCarsByUser/{userId}")]
         public async Task<ActionResult> DeleteCarsByUser(int userId)
         {
-            var response = await _autoService.DeleteCarsByUser(userId);
-            return Ok(response);
+            //var response = await _autoService.DeleteCarsByUser(userId);
+            //return Ok(response);
+            return Ok("Not implemented yet");
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> GetAllCars()
         {
             return Ok(await _dbContext.Autos.ToListAsync());
         }
-
-        //TODO: Para la próxima clase
-        //Configurar CORS
-        //Configurar Swagger con Autenticación Bearer
-        //Configurar Microsoft.Identity
-        //Agregar algo más
     }
 }

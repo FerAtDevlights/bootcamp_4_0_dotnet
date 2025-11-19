@@ -12,7 +12,7 @@ namespace Bootcamp.BusinessLayer.Interfaces
         Task<string> CreateCar(AutoDTO carToMap);
         Task<string> CreateListOfCars(List<AutoDTO> carsToMap);
         Task<string> DeleteCar(int cardIdToDelete);
-        Task<string> DeleteCarsByUser(int userId);
+        //Task<string> DeleteCarsByUser(int userId);
 
     }
 }

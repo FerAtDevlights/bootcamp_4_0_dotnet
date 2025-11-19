@@ -23,8 +23,9 @@ namespace Bootcamp.API.Controllers
         [HttpPost("SavePersona")]
         public async Task<ActionResult<string>> SavePersona(PersonaDTO value)
         {
-            var personaCreated = await _personaService.CreatePersona(value);
-            return Ok($"Persona {personaCreated.Nombre} was successfully created");
+            //var personaCreated = await _personaService.CreatePersona(value);
+            //return Ok($"Persona {personaCreated.Nombre} was successfully created");
+            return Ok("Not implemented yet");
         }
 
         //[HttpPost("AssignCar")]

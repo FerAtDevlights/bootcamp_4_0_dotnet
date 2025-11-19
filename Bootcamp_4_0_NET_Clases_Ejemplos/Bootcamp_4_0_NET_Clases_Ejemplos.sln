@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11205.157 d18.0
+VisualStudioVersion = 18.0.11205.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 1 y 2 - Tipos de Datos - Estructuras de Control", "Clase 1 y 2 - Tipos de Datos - Estructuras de Control", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.DataAccessLayer", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootcamp.API", "Bootcamp.API\Bootcamp.API.csproj", "{E90CBD04-DAB3-4816-B7B3-862E80681A0E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 9 y 10", "Clase 9 y 10", "{C4BE5EDD-6032-4DEE-9311-02B3232FBF7B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clase 9, 10 y 11 - Autenticación y Autorización", "Clase 9, 10 y 11 - Autenticación y Autorización", "{C4BE5EDD-6032-4DEE-9311-02B3232FBF7B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase9.DAL", "Clase9.DAL\Clase9.DAL.csproj", "{BF748ECA-E8C9-4E7A-A4FE-1DF41F31F00F}"
 EndProject

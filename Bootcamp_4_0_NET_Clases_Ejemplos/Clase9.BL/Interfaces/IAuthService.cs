@@ -10,6 +10,6 @@ namespace Clase9.BL.Interfaces
     {
         string HashPassword(string plainPassword);
         bool VerifyPassword(string hashedPassword, string plainPassword);
-        string GenerateJwtToken(int userId, string username);
+        string GenerateJwtToken(int userId, string username, IList<string> roles);
     }
 }

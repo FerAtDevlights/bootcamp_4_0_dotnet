@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Clase9.DAL.Models;
+
 namespace Bootcamp.DataAccessLayer.Models
 {
     public class Auto
@@ -17,6 +19,6 @@ namespace Bootcamp.DataAccessLayer.Models
         public string Patente { get; set; }
 
         //Relations
-        public ICollection<Persona> Personas { get; set; }
+        public ICollection<User> Personas { get; set; }
     }
 }

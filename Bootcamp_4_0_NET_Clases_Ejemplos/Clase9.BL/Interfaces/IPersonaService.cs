@@ -9,6 +9,6 @@ namespace Bootcamp.BusinessLayer.Interfaces
 {
     public interface IPersonaService
     {
-        Task<PersonaToReturnDTO> CreatePersona(PersonaDTO personaDto);
+        //Task<PersonaToReturnDTO> CreatePersona(PersonaDTO personaDto);
     }
 }
